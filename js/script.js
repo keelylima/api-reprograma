@@ -21,32 +21,11 @@ fetch('https://theblackwomanhistory.firebaseio.com/.json')
             let img = document.createElement('img');
             img.setAttribute('class', 'img-responsive');
 
-            function mulherMetaData() {
-                if (mulher.metadata) {
-                  return mulher.metadata;
-                } else {
-                    img.setAttribute('src', './img/img-mulher.png');
-                }
-            }
-
-            function mulherMetaDataImg(){
-                if(mulher.metadata.image){
-                    
-                    return mulher;
-                } else{
+            if(mulher.metadata && mulher.metadata.image){
+                img.setAttribute('src', mulher.metadata.image.url);
+            } else {
                 img.setAttribute('src', './img/img-mulher.png');
-                }
             }
-
-            function mulherMetaDataImgUrl(mulherMetaDataImg){
-                if(mulherMetaDataImg){
-                    mulherMetaDataImg();
-                } 
-            }
-
-            mulherMetaData()
-            mulherMetaDataImg();
-            mulherMetaDataImgUrl();
 
             // if (mulher.metadata) {
             //     if (mulher.metadata.image) {
@@ -71,3 +50,42 @@ fetch('https://theblackwomanhistory.firebaseio.com/.json')
     .catch(function (erro) {
         console.log(erro);
     })
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            // function mulherMetaData() {
+            //     if (mulher.metadata) {
+            //       return mulher.metadata;
+            //     } else {
+            //         img.setAttribute('src', './img/img-mulher.png');
+            //     }
+            // }
+
+            // function mulherMetaDataImg(){
+            //     if(mulher.metadata.image){
+                    
+            //         return mulher;
+            //     } else{
+            //     img.setAttribute('src', './img/img-mulher.png');
+            //     }
+            // }
+
+            // function mulherMetaDataImgUrl(mulherMetaDataImg){
+            //     if(mulherMetaDataImg){
+            //         mulherMetaDataImg();
+            //     } 
+            // }
+
+            // mulherMetaData()
+            // mulherMetaDataImg();
+            // mulherMetaDataImgUrl();
