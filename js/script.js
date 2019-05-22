@@ -31,6 +31,7 @@ fetch('https://theblackwomanhistory.firebaseio.com/.json')
 
             function mulherMetaDataImg(){
                 if(mulher.metadata.image){
+                    
                     return mulher;
                 } else{
                 img.setAttribute('src', './img/img-mulher.png');
