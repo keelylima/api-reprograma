@@ -56,15 +56,19 @@
 			<h3 class="maravilhosas__titulo">Veja todas as mulheres homenageadas nesse projeto!</h3>
 			<div class="maravilhosas__box"></div>
 
-			<section class="maravilhosas container" id="mulheres-maravilhosas-cadastro">
+			<section class="maravilhosas container form-container" id="mulheres-maravilhosas-cadastro">
 				<h2>Cadastro maravilhoso!</h2>
-				<form action="/action_page.php" class="form">
-					<label for="">Nome</label>
-					<input type="text" name="nome" value="" id="name">
-
-					<label for="">Endereço da Imagem</label>
-					<input type="text" name="imagem" value="" id="img">
-
+				<form action="/action_page.php">
+					<div class="form-flex">
+						<div class="form-label">
+							<label for="">Nome</label>
+							<input type="text" name="nome" value="" id="name">
+						</div>
+						<div class="form-label">
+							<label for="">Endereço da Imagem</label>
+							<input type="text" name="imagem" value="" id="img">
+						</div>
+					</div>
 					<button type="submit" id="btn">Enviar</button>
 				</form>
 			</section>
