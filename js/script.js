@@ -2,13 +2,11 @@ const container = document.querySelector('.maravilhosas__box');
 const btn = document.querySelector('#btn');
 
 
-let button = btn.addEventListener('click', (event) => {
-    event.preventDefault();
+let button = btn.addEventListener('click', () => {
+    // event.preventDefault();
 
     const name = document.querySelector('#name').value;
-    console.log(name);
     const img = document.querySelector('#img').value;
-    console.log(img);
 
     fetch('http://localhost:5001/maravilhosas', {
         method: 'POST',
@@ -25,7 +23,7 @@ let button = btn.addEventListener('click', (event) => {
             }
         }),
     })
-    location.reload();
+    // location.reload();
 })
 
 
