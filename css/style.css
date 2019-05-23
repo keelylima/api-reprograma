@@ -604,6 +604,7 @@ button {
     background: transparent;
     color: #323534;
     float: right;
+    cursor: pointer;
 }
 
 button:hover {
