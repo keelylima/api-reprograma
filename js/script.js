@@ -2,7 +2,7 @@ const container = document.querySelector('.maravilhosas__box');
 const btn = document.querySelector('#btn');
 
 
-btn.addEventListener('click', (event) => {
+let button = btn.addEventListener('click', (event) => {
     event.preventDefault();
 
     const name = document.querySelector('#name').value;
@@ -25,7 +25,9 @@ btn.addEventListener('click', (event) => {
             }
         }),
     })
+    location.reload();
 })
+
 
 fetch('http://localhost:5001/maravilhosas')
     .then(function (response) {
@@ -55,7 +57,7 @@ fetch('http://localhost:5001/maravilhosas')
             //     img.setAttribute('src', './img/img-mulher.png');
             // }
 
-            
+
             // PRIMEIRO
             // if (mulher.metadata) {
             //     if (mulher.metadata.image) {
