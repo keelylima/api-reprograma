@@ -554,3 +554,58 @@ li {
         max-width: 650px;
     }
 }
+
+
+/*CSS Kelly - Form*/
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    color: #323534;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label input {
+    border: solid 1px #674582;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:focus {
+    /* box-shadow: 0 4px 5px 0 #C184BA; */
+    border: 1px solid #C184BA;
+    outline: #C184BA;
+}
+
+.form-label label {
+    padding-bottom: 5px;
+    color: #323534;
+}
+
+button {
+    border: solid 1px #674582;
+    border-radius: 5px;
+    padding: 7px 25px;
+    margin-top: 10px;
+    background: transparent;
+    color: #323534;
+    float: right;
+}
+
+button:hover {
+    border: solid 1px #C184BA;
+}
