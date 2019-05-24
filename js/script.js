@@ -59,7 +59,7 @@ fetch('http://localhost:5001/maravilhosas')
             box.appendChild(btn__2);
 
             btn__2.addEventListener('click', () => {
-                fetch('http://localhost:5001/maravilhosas', {
+                fetch(`http://localhost:5001/maravilhosas/${mulher.id}`, {
                     method: 'DELETE',
                     headers: {
                         'Accept': 'application/json',
