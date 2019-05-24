@@ -1,7 +1,7 @@
 const container = document.querySelector('.maravilhosas__box');
 const btn = document.querySelector('#btn');
 
-
+//POST
 btn.addEventListener('click', () => {
 
     const name = document.querySelector('#name').value;
@@ -35,7 +35,6 @@ fetch('http://localhost:5001/maravilhosas')
 
             let box = document.createElement('div');
             box.setAttribute('class', 'maravilhosas__perfil');
-            // box.setAttribute('id', mulher.id);
             container.appendChild(box);
 
             let ancora = document.createElement('a');
@@ -83,42 +82,3 @@ fetch('http://localhost:5001/maravilhosas')
     .catch(function (erro) {
         console.log(erro);
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // function mulherMetaData() {
-            //     if (mulher.metadata) {
-            //       return mulher.metadata;
-            //     } else {
-            //         img.setAttribute('src', './img/img-mulher.png');
-            //     }
-            // }
-
-            // function mulherMetaDataImg(){
-            //     if(mulher.metadata.image){
-
-            //         return mulher;
-            //     } else{
-            //     img.setAttribute('src', './img/img-mulher.png');
-            //     }
-            // }
-
-            // function mulherMetaDataImgUrl(mulherMetaDataImg){
-            //     if(mulherMetaDataImg){
-            //         mulherMetaDataImg();
-            //     } 
-            // }
-
-            // mulherMetaData()
-            // mulherMetaDataImg();
-            // mulherMetaDataImgUrl();
