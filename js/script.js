@@ -52,12 +52,12 @@ fetch('http://localhost:5001/maravilhosas')
             nome.innerHTML = `${mulher.title}`;
             ancora.appendChild(nome);
 
-            let btn__2 = document.createElement('button');
-            btn__2.innerHTML = '✖';
-            btn__2.setAttribute('data-id', mulher.id);
-            box.appendChild(btn__2);
+            let btn__del = document.createElement('button');
+            btn__del.innerHTML = '✖';
+            btn__del.setAttribute('data-id', mulher.id);
+            box.appendChild(btn__del);
 
-            btn__2.addEventListener('click', () => {
+            btn__del.addEventListener('click', () => {
                 fetch(`http://localhost:5001/maravilhosas/${mulher.id}`, {
                     method: 'DELETE',
                     headers: {
@@ -65,7 +65,7 @@ fetch('http://localhost:5001/maravilhosas')
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        'id': btn__2.getAttribute('data-id')
+                        'id': btn__del.getAttribute('data-id')
                     })
                 })
                 .then(() => {
