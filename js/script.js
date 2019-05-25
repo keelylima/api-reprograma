@@ -64,9 +64,9 @@ fetch('http://localhost:5001/maravilhosas')
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({
-                        'id': btn__del.getAttribute('data-id')
-                    })
+                    // body: JSON.stringify({
+                    //     'id': btn__del.getAttribute('data-id')
+                    // })
                 })
                 .then(() => {
                     box.remove();
